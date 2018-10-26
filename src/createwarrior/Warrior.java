@@ -18,10 +18,10 @@ public abstract class Warrior {
     private int speed;
     private int agility;
 
-    private String martialArtsType;
-    private String weapons;
+    private String[] martialArtsType;
+    private String[] weapons;
 
-    private String powers;
+    private String[] powers;
     private String specialSkill;
     private boolean levelUpAbility;
     
@@ -43,19 +43,15 @@ public abstract class Warrior {
         this.speed = speed;
     }
 
-    public void setAgility(int agility) {
-        this.agility = agility;
-    }
-
-    public void setMartialArtsType(String martialArtsType) {
+    public void setMartialArtsType(String[] martialArtsType) {
         this.martialArtsType = martialArtsType;
     }
 
-    public void setWeapons(String weapons) {
+    public void setWeapons(String[] weapons) {
         this.weapons = weapons;
     }
 
-    public void setPowers(String powers) {
+    public void setPowers(String[] powers) {
         this.powers = powers;
     }
 
@@ -66,4 +62,6 @@ public abstract class Warrior {
     public void setLevelUpAbility(boolean levelUpAbility) {
         this.levelUpAbility = levelUpAbility;
     }
+
+    
 }
